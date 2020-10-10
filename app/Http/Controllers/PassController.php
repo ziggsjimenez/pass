@@ -74,6 +74,7 @@ class PassController extends Controller
         $pass->user_id = $user_id;
         $pass->code = $this->generatecode();
         $pass->employer = $request->employer;
+        $pass->batch = 0;
         $pass->save();
 
         return redirect(route('passes.index'));

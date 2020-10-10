@@ -14,6 +14,7 @@ class Pass extends Model
         'fulladdress',
         'age',
         'cellphone',
+        'batch'
         ];
 
     public function fullname(){
