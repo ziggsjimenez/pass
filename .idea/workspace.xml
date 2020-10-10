@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31cff7cf-83aa-4941-b2ae-b434b3088837" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PassController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PassController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pass/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/pass/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pass/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pass/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" afterPath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="printpass.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="printpass.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/printpass.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -67,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prints.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prints.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,11 +147,11 @@
         <option value="$PROJECT_DIR$/resources/views/pass/form/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Pass.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/table/passes.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PassController.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/printpass.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
       </list>
     </option>
   </component>
@@ -593,12 +591,12 @@
       <updated>1602215733937</updated>
       <workItem from="1602215738754" duration="14198000" />
       <workItem from="1602242453899" duration="12687000" />
-      <workItem from="1602324377698" duration="2080000" />
+      <workItem from="1602324377698" duration="2816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28965000" />
+    <option name="totallyTimeSpent" value="29701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -951,14 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pass/form/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1005,6 +995,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
