@@ -34,6 +34,7 @@
                     <th>Address</th>
                     <th>Sex</th>
                     <th>Age</th>
+                    <th>Employer</th>
                     <th>Contact No.:</th>
                     <th>Action</th>
                 </tr>
@@ -47,10 +48,11 @@
                         <td>{{$pass->fulladdress}}</td>
                         <td>{{$pass->sex}}</td>
                         <td>{{$pass->age}}</td>
+                        <td>{{$pass->employer}}</td>
                         <td>{{$pass->cellphone}}</td>
                         <td>
-                            <button class="editbtn" value="{{$pass->id}}"><i class="fas fa-pen fa-2x"></i></button>
-                            <button class="delbtn" value="{{$pass->id}}"><i class="fas fa-trash fa-2x"></i></button>
+                            <a href="{{route('passes.edit',$pass->id)}}"><i class="fas fa-pen fa-2x"></i></a>
+                            <button class="delbtn" value="{{$pass->id}}"><i class="fas fa-trash fa-2x text-danger"></i></button>
                             <i class="fas fa-print fa-2x"></i>
                             <input type="checkbox" class="checkprint" value="{{$pass->id}}" @if($pass->printpass==1) checked @endif>
                         </td>

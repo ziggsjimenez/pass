@@ -18,8 +18,24 @@ class PassController extends Controller
 
     public function index()
     {
+
+
         $passes = Pass::where('user_id',Auth::user()->id)->get();
+//        $passes = Pass::where('user_id',2)->get();
+//                $count=1;
+
+//        foreach($passes as $pass){
+//         $pass->code = $this->generatecode2($count);
+//        $count++;
+//            $pass->save();
+//    }
         return view('pass.index',compact('passes'));
+    }
+
+    public function edit(Pass $pass)
+    {
+        $passes = Pass::where('user_id',Auth::user()->id)->get();
+        return view('pass.edit',compact('pass','passes'));
     }
 
     /**
@@ -61,6 +77,37 @@ class PassController extends Controller
         $pass->save();
 
         return redirect(route('passes.index'));
+
+    }
+
+    private function generatecode2($pass){
+
+        $date = date('Ymd');
+
+//        $pass= Pass::get()->count();
+        $trailing ="000";
+        if($pass==0){
+            $trailing ="000";
+            $pass =1;
+        }
+
+        if($pass<10 && $pass>0){
+            $trailing ="000";
+        }
+
+        if($pass<100 && $pass>9){
+            $trailing ="00";
+        }
+
+        if($pass<1000 && $pass>100){
+            $trailing ="0";
+        }
+
+        if($pass>=1000){
+            $trailing ="";
+        }
+
+        return $date.$trailing.$pass;
 
     }
 
@@ -173,11 +220,7 @@ class PassController extends Controller
      * @param  \App\Pass  $pass
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pass $pass)
-    {
-        $passes = Pass::get()->all();
-        return view('pass.edit',compact('pass','passes'));
-    }
+
 
     /**
      * Update the specified resource in storage.

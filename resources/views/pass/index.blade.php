@@ -52,7 +52,7 @@
                         <td>{{$pass->cellphone}}</td>
                         <td>
                             <a href="{{route('passes.edit',$pass->id)}}"><i class="fas fa-pen fa-2x"></i></a>
-                            <button class="delbtn" value="{{$pass->id}}"><i class="fas fa-trash fa-2x"></i></button>
+                            <button class="delbtn" value="{{$pass->id}}"><i class="fas fa-trash fa-2x text-danger"></i></button>
                             <i class="fas fa-print fa-2x"></i>
                             <input type="checkbox" class="checkprint" value="{{$pass->id}}" @if($pass->printpass==1) checked @endif>
                         </td>
@@ -99,6 +99,35 @@
 
             $('#passtable').DataTable();
 
+            $('#passtable tbody').on( 'click', 'button', function () {
+
+                var r = confirm("Delete record?");
+
+                if (r === true) {
+
+                    $(this).parents('tr').remove();
+
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+                    $.ajax({
+
+                        url: '{{route('deletepass')}}',
+                        type: 'POST',
+
+                        data: {_token: CSRF_TOKEN,id:$(this).val()},
+                        dataType: 'JSON',
+
+                        success: function (data) {
+
+                        }
+                    });
+
+                }
+
+
+            } );
+
+
 
             function loadpasses(){
 
@@ -132,38 +161,42 @@
 
             });
 
-            $(".delbtn").on('click', function (event) {
 
 
 
-                var r = confirm("Delete record?");
-                if (r == true) {
-                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-
-                    $.ajax({
-
-                        url: '{{route('deletepass')}}',
-                        type: 'POST',
-
-                        data: {_token: CSRF_TOKEN,id:$(this).val()},
-                        dataType: 'JSON',
-
-                        success: function (data) {
-
-                            loadpasses();
-
-//                            $('#printpass').html(data['view']);
-
-                        }
-                    });
-
-                } else {
-                   return false;
-                }
+            {{--$(".delbtn").on('click', function (event) {--}}
 
 
 
-            });
+                {{--var r = confirm("Delete record?");--}}
+
+                {{--if (r == true) {--}}
+                    {{--var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');--}}
+
+                    {{--$.ajax({--}}
+
+                        {{--url: '{{route('deletepass')}}',--}}
+                        {{--type: 'POST',--}}
+
+                        {{--data: {_token: CSRF_TOKEN,id:$(this).val()},--}}
+                        {{--dataType: 'JSON',--}}
+
+                        {{--success: function (data) {--}}
+{{--//                            $(this).closest('tr').remove();--}}
+{{--//                            alert();--}}
+
+                            {{--table.row( $(this).parents('tr') )--}}
+                                {{--.remove();--}}
+                        {{--}--}}
+                    {{--});--}}
+
+                {{--} else {--}}
+                   {{--return false;--}}
+                {{--}--}}
+
+
+
+            {{--});--}}
 
             function loadqrprint(){
 
