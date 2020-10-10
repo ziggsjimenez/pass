@@ -27,7 +27,7 @@
 <div class="holder">
         <div class="qr">
 
-                {!! QrCode::size(100)->generate('Name:'.$pass->fullname().' Contact: '.$pass->cellphone.' Age: '.$pass->age.' Sex: '.$pass->sex.' Address: '.$pass->fulladdress)!!}
+                {!! QrCode::size(100)->generate('Name:'.$pass->fullname().' Employer: '.$pass->employer.' Contact: '.$pass->cellphone.' Age: '.$pass->age.' Sex: '.$pass->sex.' Address: '.$pass->fulladdress)!!}
 {{--        {!! QrCode::size(200)->generate('http://pass.manolofortich.gov.ph/'.$pass->code)!!}--}}
         </div>
 
