@@ -16,6 +16,11 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('employer','Employer') !!}
+    {!! Form::text('employer',null,['class'=>'form-control'. ( $errors->has('employer') ? ' is-invalid' : '' ),'placeholder'=>'Type here...']) !!}
+</div>
+
+<div class="form-group">
     {!! Form::label('fulladdress','Address') !!}
     {!! Form::text('fulladdress',null,['class'=>'form-control'. ( $errors->has('fulladdress') ? ' is-invalid' : '' ),'placeholder'=>'Type here...']) !!}
 </div>

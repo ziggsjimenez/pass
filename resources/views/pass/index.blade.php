@@ -34,6 +34,7 @@
                     <th>Address</th>
                     <th>Sex</th>
                     <th>Age</th>
+                    <th>Employer</th>
                     <th>Contact No.:</th>
                     <th>Action</th>
                 </tr>
@@ -47,6 +48,7 @@
                         <td>{{$pass->fulladdress}}</td>
                         <td>{{$pass->sex}}</td>
                         <td>{{$pass->age}}</td>
+                        <td>{{$pass->employer}}</td>
                         <td>{{$pass->cellphone}}</td>
                         <td>
                             <a href="{{route('passes.edit',$pass->id)}}"><i class="fas fa-pen fa-2x"></i></a>
@@ -98,6 +100,30 @@
             $('#passtable').DataTable();
 
 
+            function loadpasses(){
+
+                var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+                $.ajax({
+
+                    url: '{{route('passes.loadpasses')}}',
+
+                    type: 'POST',
+
+                    data: {_token: CSRF_TOKEN},
+
+                    dataType: 'JSON',
+
+                    success: function (data) {
+
+                        $('#passes').html(data['view']);
+
+                    }
+
+                });
+            }
+
+
             loadqrprint();
 
             $(".editbtn").on('click', function (event) {
@@ -108,7 +134,34 @@
 
             $(".delbtn").on('click', function (event) {
 
-                alert($(this).val());
+
+
+                var r = confirm("Delete record?");
+                if (r == true) {
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+                    $.ajax({
+
+                        url: '{{route('deletepass')}}',
+                        type: 'POST',
+
+                        data: {_token: CSRF_TOKEN,id:$(this).val()},
+                        dataType: 'JSON',
+
+                        success: function (data) {
+
+                            loadpasses();
+
+//                            $('#printpass').html(data['view']);
+
+                        }
+                    });
+
+                } else {
+                   return false;
+                }
+
+
 
             });
 

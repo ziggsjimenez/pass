@@ -57,6 +57,7 @@ class PassController extends Controller
         $pass->fill($request->all());
         $pass->user_id = $user_id;
         $pass->code = $this->generatecode();
+        $pass->employer = $request->employer;
         $pass->save();
 
         return redirect(route('passes.index'));
@@ -213,8 +214,13 @@ class PassController extends Controller
      * @param  \App\Pass  $pass
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pass $pass)
+    public function deletepass ()
     {
-        //
+        $id=$_POST['id'];
+        $pass = Pass::find($id);
+
+        $pass->delete();
+
+        return response()->json(['msg'=>'Record deleted.']);
     }
 }

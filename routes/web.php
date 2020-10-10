@@ -29,7 +29,11 @@ Route::resource('passes','PassController');
 Route::post('/passes/loadpasses','PassController@loadpasses')->name('passes.loadpasses');
 
 Route::post('/passes/loadprint','PassController@loadprint')->name('pass.loadprint');
+
 Route::post('/passes/addtoprint','PassController@addtoprint')->name('pass.addtoprint');
+
 Route::post('/passes/removetoprint','PassController@removetoprint')->name('pass.removetoprint');
 
 Route::get('/printpass','PassController@printpass')->name('printpass');
+
+Route::post('/deletepass','PassController@deletepass')->name('deletepass');

@@ -9,6 +9,7 @@ class Pass extends Model
     protected $fillable = ['firstname',
         'middlename',
         'lastname',
+        'employer',
         'sex',
         'fulladdress',
         'age',

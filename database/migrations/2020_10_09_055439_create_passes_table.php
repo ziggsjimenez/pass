@@ -23,6 +23,7 @@ class CreatePassesTable extends Migration
             $table->integer('age');
             $table->text('sex');
             $table->text('code');
+            $table->text('employer');
             $table->tinyInteger('printpass')->default(0);
             $table->integer('user_id');
             $table->timestamps();
