@@ -24,6 +24,9 @@
         }
 
 </style>
+<?php $count=1; ?>
+
+
 @foreach ($passes as $pass)
 
 <div class="holder">
@@ -41,11 +44,13 @@
 {{--        {!! QrCode::size(200)->generate('http://pass.manolofortich.gov.ph/'.$pass->code)!!}--}}
         </div>
 
-
+        @if($count==40)
+                <p style="page-break-after: always;">&nbsp;</p>
+                <p style="page-break-before: always;">&nbsp;</p>
+<?php $count=0;?>
+                @endif
+        <?php $count++;?>
 </div>
-
-
-
 
 @endforeach
 
