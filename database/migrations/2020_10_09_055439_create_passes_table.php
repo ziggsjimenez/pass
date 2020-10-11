@@ -26,6 +26,7 @@ class CreatePassesTable extends Migration
             $table->text('employer');
             $table->tinyInteger('printpass')->default(0);
             $table->integer('user_id');
+            $table->integer('batch');
             $table->timestamps();
         });
     }

@@ -154,7 +154,7 @@ class PassController extends Controller
 
     public function printpass(){
 
-        $passes = Pass::where('user_id',Auth::user()->id)->where('printpass',1)->get();
+        $passes = Pass::where('user_id',Auth::user()->id)->where('printpass',1)->orderBy('lastname')->get();
 
         return view ('pass.printpass',compact('passes'));
 

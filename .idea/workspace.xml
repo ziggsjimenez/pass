@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31cff7cf-83aa-4941-b2ae-b434b3088837" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" afterPath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PassController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PassController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,13 +68,13 @@
       <file leaf-file-name="prints.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="357">
+              <caret line="47" column="63" lean-forward="true" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
               <folding>
                 <element signature="e#1076#1109#0#HTML" expanded="true" />
                 <element signature="e#1140#1174#0#HTML" expanded="true" />
-                <marker date="1602396129333" expanded="true" signature="704:913" ph="..." />
-                <marker date="1602396129333" expanded="true" signature="733:912" ph="..." />
+                <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
+                <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
               </folding>
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="2020_10_09_055439_create_passes_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="544">
+              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
       <file leaf-file-name="PassController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PassController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+            <state relative-caret-position="282">
+              <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -128,6 +128,7 @@
     <findStrings>
       <find>load</find>
       <find>edit</find>
+      <find>prin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,7 +148,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/form/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/form/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/table/passes.blade.php" />
@@ -155,6 +155,7 @@
         <option value="$PROJECT_DIR$/resources/views/pass/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/printpass.blade.php" />
         <option value="$PROJECT_DIR$/app/Pass.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PassController.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
       </list>
@@ -597,15 +598,16 @@
       <workItem from="1602215738754" duration="14198000" />
       <workItem from="1602242453899" duration="12687000" />
       <workItem from="1602324377698" duration="4965000" />
-      <workItem from="1602395467858" duration="942000" />
+      <workItem from="1602395467858" duration="3654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32792000" />
+    <option name="totallyTimeSpent" value="35504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -615,7 +617,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -671,8 +673,8 @@
           <folding>
             <element signature="e#1076#1109#0#HTML" expanded="true" />
             <element signature="e#1140#1174#0#HTML" expanded="true" />
-            <marker date="1602396129333" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602396129333" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -716,8 +718,8 @@
           <folding>
             <element signature="e#1076#1109#0#HTML" expanded="true" />
             <element signature="e#1140#1174#0#HTML" expanded="true" />
-            <marker date="1602396129333" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602396129333" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -844,8 +846,8 @@
           <folding>
             <element signature="e#1076#1109#0#HTML" expanded="true" />
             <element signature="e#1140#1174#0#HTML" expanded="true" />
-            <marker date="1602396129333" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602396129333" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -976,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pass/table/passes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pass/form/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1024,24 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pass/printpass.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PassController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Pass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1050,15 +1018,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pass/table/passes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PassController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="160" column="5" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pass/printpass.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="357">
+          <caret line="47" column="63" lean-forward="true" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
           <folding>
             <element signature="e#1076#1109#0#HTML" expanded="true" />
             <element signature="e#1140#1174#0#HTML" expanded="true" />
-            <marker date="1602396129333" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602396129333" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
