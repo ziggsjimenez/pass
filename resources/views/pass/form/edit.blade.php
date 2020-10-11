@@ -27,7 +27,7 @@
 
 <div class="form-group">
     {!! Form::label('cellphone','Cellphone No.:') !!}
-    {!! Form::number('cellphone',null,['class'=>'form-control'. ( $errors->has('cellphone') ? ' is-invalid' : '' ),'placeholder'=>'Type here...']) !!}
+    {!! Form::text('cellphone',null,['class'=>'form-control'. ( $errors->has('cellphone') ? ' is-invalid' : '' ),'placeholder'=>'Type here...']) !!}
 </div>
 
 <div class="form-group">
