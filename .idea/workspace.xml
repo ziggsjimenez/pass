@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31cff7cf-83aa-4941-b2ae-b434b3088837" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" afterPath="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/form/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="391">
+              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -57,8 +58,8 @@
       <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/form/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="408">
+              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -67,11 +68,11 @@
       <file leaf-file-name="prints.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="67" lean-forward="false" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+            <state relative-caret-position="238">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
-                <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
+                <marker date="1602503266538" expanded="true" signature="704:913" ph="..." />
+                <marker date="1602503266538" expanded="true" signature="733:912" ph="..." />
               </folding>
             </state>
           </provider>
@@ -145,8 +146,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/pass/form/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pass/form/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/table/passes.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/edit.blade.php" />
@@ -154,6 +153,8 @@
         <option value="$PROJECT_DIR$/app/Pass.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_10_09_055439_create_passes_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PassController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pass/form/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pass/form/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pass/table/prints.blade.php" />
       </list>
     </option>
@@ -596,18 +597,19 @@
       <workItem from="1602242453899" duration="12687000" />
       <workItem from="1602324377698" duration="4965000" />
       <workItem from="1602395467858" duration="4366000" />
-      <workItem from="1602421015792" duration="8000" />
+      <workItem from="1602421015792" duration="679000" />
+      <workItem from="1602503198628" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36224000" />
+    <option name="totallyTimeSpent" value="36952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -669,8 +671,8 @@
         <state relative-caret-position="714">
           <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding>
-            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -712,8 +714,8 @@
         <state relative-caret-position="391">
           <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
-            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -838,8 +840,8 @@
         <state relative-caret-position="221">
           <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding>
-            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
@@ -970,22 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pass/form/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pass/form/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pass/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1044,13 +1030,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pass/form/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pass/form/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pass/table/prints.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="67" lean-forward="false" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+        <state relative-caret-position="238">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <marker date="1602409979150" expanded="true" signature="704:913" ph="..." />
-            <marker date="1602409979150" expanded="true" signature="733:912" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="704:913" ph="..." />
+            <marker date="1602503266538" expanded="true" signature="733:912" ph="..." />
           </folding>
         </state>
       </provider>
