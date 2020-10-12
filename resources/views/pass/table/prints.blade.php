@@ -45,8 +45,10 @@
         </div>
 
         @if($count==36)
-                <p style="page-break-after: always;">&nbsp;</p>
-                <p style="page-break-before: always;">&nbsp;</p>
+                <div style="page-break-before: always;"></div>
+                <div style="page-break-after: always;"> </div>
+                {{--<p >&nbsp;</p>--}}
+                {{--<p style="page-break-before: always;">&nbsp;</p>--}}
 <?php $count=0;?>
                 @endif
         <?php $count++;?>
