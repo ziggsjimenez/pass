@@ -32,7 +32,7 @@
 <div class="holder">
 
         <div class="fullname">
-                <br/>
+
                 <p>{{$pass->fullname()}}</p>
 
         </div>
