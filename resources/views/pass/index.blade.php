@@ -96,7 +96,9 @@
 
         $(document).ready(function () {
 
-            $('#passtable').DataTable();
+            $('#passtable').DataTable({
+                "paging": false
+            });
 
             $("#clearprint").on('click', function (event) {
 
