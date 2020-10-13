@@ -160,6 +160,14 @@ class PassController extends Controller
 
     }
 
+    public function clearprintpass(){
+
+        Pass::where('user_id',Auth::user()->id)->where('printpass',1)->update(['printpass' => 0]);;
+
+        return response()->json(['msg'=>'print table cleared']);
+
+    }
+
     public function addtoprint(){
 
             $id = $_POST['id'];

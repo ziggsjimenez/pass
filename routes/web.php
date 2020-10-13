@@ -37,3 +37,5 @@ Route::post('/passes/removetoprint','PassController@removetoprint')->name('pass.
 Route::get('/printpass','PassController@printpass')->name('printpass');
 
 Route::post('/deletepass','PassController@deletepass')->name('deletepass');
+
+Route::post('/clearprintpass','PassController@clearprintpass')->name('clearprintpass');

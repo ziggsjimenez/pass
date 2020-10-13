@@ -68,20 +68,19 @@
 
             <div class="row">
                 <div class="col">
+                    <a href="{{route('printpass')}}" target="_blank" class="btn btn-primary">Print</a>
+                    <button id="clearprint" class="btn btn-primary">Clear Print Table</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
                     <div id="printpass"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <a href="{{route('printpass')}}" class="btn btn-primary">Print</a>
-                </div>
-            </div>
-
-
 
         </div>
     </div>
-
 
 
 @endsection
@@ -98,6 +97,29 @@
         $(document).ready(function () {
 
             $('#passtable').DataTable();
+
+            $("#clearprint").on('click', function (event) {
+
+                var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+                $.ajax({
+
+                    url: '{{route('clearprintpass')}}',
+                    type: 'POST',
+
+                    data: {_token: CSRF_TOKEN},
+                    dataType: 'JSON',
+
+                    success: function (data) {
+
+                        console.log(data['msg']);
+                        loadqrprint();
+
+                    }
+                });
+
+            });
+
 
             $('#passtable tbody').on( 'click', 'button', function () {
 
