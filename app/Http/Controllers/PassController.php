@@ -154,7 +154,7 @@ class PassController extends Controller
 
     public function passprintindex(){
 
-        $passes = Pass::where('user_id',Auth::user()->id)->where('printpass',1)->orderBy('lastname')->get();
+        $passes = Pass::where('user_id',Auth::user()->id)->orderBy('lastname')->get();
 
         return view ('pass.printindex',compact('passes'));
     }
