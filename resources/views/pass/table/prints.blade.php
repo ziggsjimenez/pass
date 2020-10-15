@@ -44,7 +44,8 @@
 {{--        {!! QrCode::size(200)->generate('http://pass.manolofortich.gov.ph/'.$pass->code)!!}--}}
         </div>
 
-        @if($count==40)
+        {{--@if($count==40)--}}
+        @if($count==36)
                 <div style="page-break-before: always;"></div>
                 <div style="page-break-after: always;"> </div>
                 {{--<p >&nbsp;</p>--}}

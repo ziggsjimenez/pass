@@ -3,27 +3,22 @@
 @section('customStyles')
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/datatables/datatables.css')}}"/>
-<style>
-    button, input[type="submit"], input[type="reset"] {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    }
-</style>
-    @endsection
+    <style>
+        button, input[type="submit"], input[type="reset"] {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+        }
+    </style>
+@endsection
 
 @section('content')
 
     <div class="row">
-        <div class="col">
-
-            @include('pass.form.create')
-
-        </div>
 
         <div id="passes" class="col">
 
@@ -57,6 +52,7 @@
                             <input type="checkbox" class="checkprint" value="{{$pass->id}}" @if($pass->printpass==1) checked @endif>
                         </td>
                     </tr>
+
                 @endforeach
 
                 </tbody>
@@ -64,6 +60,22 @@
 
         </div>
 
+        <div class="col">
+
+            <div class="row">
+                <div class="col">
+                    <a href="{{route('printpass')}}" target="_blank" class="btn btn-primary">Print</a>
+                    <button id="clearprint" class="btn btn-primary">Clear Print Table</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div id="printpass"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
@@ -176,31 +188,31 @@
 
 
 
-                {{--var r = confirm("Delete record?");--}}
+            {{--var r = confirm("Delete record?");--}}
 
-                {{--if (r == true) {--}}
-                    {{--var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');--}}
+            {{--if (r == true) {--}}
+            {{--var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');--}}
 
-                    {{--$.ajax({--}}
+            {{--$.ajax({--}}
 
-                        {{--url: '{{route('deletepass')}}',--}}
-                        {{--type: 'POST',--}}
+            {{--url: '{{route('deletepass')}}',--}}
+            {{--type: 'POST',--}}
 
-                        {{--data: {_token: CSRF_TOKEN,id:$(this).val()},--}}
-                        {{--dataType: 'JSON',--}}
+            {{--data: {_token: CSRF_TOKEN,id:$(this).val()},--}}
+            {{--dataType: 'JSON',--}}
 
-                        {{--success: function (data) {--}}
-{{--//                            $(this).closest('tr').remove();--}}
-{{--//                            alert();--}}
+            {{--success: function (data) {--}}
+            {{--//                            $(this).closest('tr').remove();--}}
+            {{--//                            alert();--}}
 
-                            {{--table.row( $(this).parents('tr') )--}}
-                                {{--.remove();--}}
-                        {{--}--}}
-                    {{--});--}}
+            {{--table.row( $(this).parents('tr') )--}}
+            {{--.remove();--}}
+            {{--}--}}
+            {{--});--}}
 
-                {{--} else {--}}
-                   {{--return false;--}}
-                {{--}--}}
+            {{--} else {--}}
+            {{--return false;--}}
+            {{--}--}}
 
 
 
@@ -278,4 +290,4 @@
 
     </script>
 
-    @endsection
+@endsection
