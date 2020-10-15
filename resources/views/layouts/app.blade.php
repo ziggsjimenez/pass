@@ -39,7 +39,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('passprintindex')}}">Print</a>
+                            <a class="nav-link btn btn-primary" href="{{route('passprintindex')}}">Print</a>
                         </li>
                     </ul>
 

@@ -32,6 +32,15 @@ class PassController extends Controller
         return view('pass.index',compact('passes'));
     }
 
+    public function printcounter(){
+
+        $user_id = Auth::user()->id;
+
+        $passes = Pass::where('user_id',$user_id)->where('printpass',1)->get();
+
+        return view('pass.printcounter',compact('passes'));
+    }
+
     public function edit(Pass $pass)
     {
         $passes = Pass::where('user_id',Auth::user()->id)->get();
@@ -62,6 +71,7 @@ class PassController extends Controller
             'lastname'=>'required',
             'fulladdress'=>'required',
             'cellphone'=>'required',
+            'employer'=>'required',
             'sex'=>'required',
             'age'=>'required',
         ]);
@@ -74,6 +84,7 @@ class PassController extends Controller
         $pass->user_id = $user_id;
         $pass->code = $this->generatecode();
         $pass->employer = $request->employer;
+        $pass->printpass = 1;
         $pass->batch = 0;
         $pass->save();
 

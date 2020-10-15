@@ -66,6 +66,8 @@
                 <div class="col">
                     <a href="{{route('printpass')}}" target="_blank" class="btn btn-primary">Print</a>
                     <button id="clearprint" class="btn btn-primary">Clear Print Table</button>
+                    <a href="{{route('printcounter')}}" target="_blank" class="btn btn-primary">Print Counter</a>
+
                 </div>
             </div>
 
