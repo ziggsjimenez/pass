@@ -150,7 +150,7 @@ class PassController extends Controller
             $trailing ="";
         }
 
-        return $date.$trailing.$pass;
+        return $date.$trailing.$pass."-".Auth::user()->id;
 
     }
 

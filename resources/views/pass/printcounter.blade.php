@@ -33,7 +33,7 @@
     $(document).ready(function () {
 
         var temp = '{{$passes->count()}}';
-        if(temp==10)
+        if(temp>10)
         {
         var url = '{{route('printpass')}}';
         var printWindow = window.open(url, '_blank');
